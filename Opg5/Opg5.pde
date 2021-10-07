@@ -31,8 +31,9 @@ void draw(){
   // Bananer men pris antal og fuld pris
   int antal1 = 2;
   text(antal1,20,260);
-  text("Bananer",50,260);
+  text("Bananer",100,260);
   int pris1 = 2;
+  text(pris1,230,260);
   
   int fuldpris1 = pris1 * antal1;
   text(fuldpris1,300,260);
@@ -41,8 +42,9 @@ void draw(){
   // Vindruer med pris antal og fuldpris 
     int antal2 = 3;
   text(antal2,20,280);
-  text("Vindruer",50,280);
+  text("Vindruer",100,280);
   int pris2 = 14;
+  text(pris2,220,280);
   
   int fuldpris2 = pris2 * antal2;
   text(fuldpris2,290,280);
