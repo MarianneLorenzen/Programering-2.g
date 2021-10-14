@@ -78,7 +78,7 @@ max = 310 - min = -310
     Tese til long
 max = 2^31*2 - min = -2^31*2
     Tese til Double
-max = 2^28*2 - min = -2^31*2
+max = 2^28*2 - min = -2^28*2
 
 
 //Skriv et program, som kan beregne den maksimale værdi for en datatype. Vi kalder dette den induktive metode (specialtilfælde), fordi vi leder efter en special værdi (sort svane). Find evt. inspiration i programmet testDatatyper, som du finder på github. Noter alle dine resultater.
