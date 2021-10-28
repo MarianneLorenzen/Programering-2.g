@@ -50,17 +50,20 @@ void draw(){
   text(fuldpris2,290,280);
   text("kr.",320,280);
   
-  text("--------------",150,310);
-  //fuld pris 
+  text("- - - - - - - - - - - - - -",130,310);
+ 
+  //Udregning af fuld pris 
   text("Fuld pris", 20,340);
   int endligPris = fuldpris1 + fuldpris2;
   text(endligPris,290,340);
   text("kr.",320,340);
   
+  //Udregner moms 
   float moms = beregnMomsSelv(endligPris);                // defiere udregningernfor at finde frem til beløb med moms. 
   text(moms,290,390);
   text("Heraf moms",20,390);
   
+  //Udregner pris uden moms 
   float belobMoms = beregnUdenMoms(endligPris);           // defiere udregningernfor at finde frem til beløb uden moms. 
   text(belobMoms,290,410);
   text("Beløb uden moms",20,410);
