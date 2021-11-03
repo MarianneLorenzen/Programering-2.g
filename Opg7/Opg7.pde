@@ -1,5 +1,5 @@
 /*
-Jeg mangler at lavve opgave 2, 3 og 4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Jeg mangler at lavve opgave 2, 3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -93,7 +93,13 @@ println("opg 2.");
 
 //2) Lav henholdsvis en for-løkke og en while-løkken som skal gennem løbes 30 gange. Start med i=0; og tæl i op hver gang du løber gennem løkken. Den skal kun udskrive i, når i er mellem værdien 10 til og med 20.
 //while løkke 
-
+//for løkke 
+for(int j=0;j<30;j++){
+  println(i);
+  if (i>10){
+    println(i);
+  }
+}
 
 println();
 println("Opgave 3");
