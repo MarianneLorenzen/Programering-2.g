@@ -1,4 +1,10 @@
 /*
+Jeg mangler at lavve opgave 2, 3 og 4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
 I denne opgave skal du arbejde med løkker. For og While løkker
 
 Vi har nu talt om de forskellige datatyper, vi har talt om floating point og vi ved hvad overflow er.
@@ -62,7 +68,7 @@ Slå op i dokumentationen for processing og læs om string(). Nederst er der en 
 //charAt() sammen med din tæller i.
 
 String s="hej med dig";
-boolean i>10=true;
+boolean found=false;
 int i=0;
 //while løkke 
 while (!found) {
@@ -87,33 +93,89 @@ println("opg 2.");
 
 //2) Lav henholdsvis en for-løkke og en while-løkken som skal gennem løbes 30 gange. Start med i=0; og tæl i op hver gang du løber gennem løkken. Den skal kun udskrive i, når i er mellem værdien 10 til og med 20.
 //while løkke 
-while (10<i>20) {
-  if (charAt(i)) {
-    found=true;
-  }
-  println(s.charAt(i));
-  i++;  //eller man kan skrive i=i+1
-  
-}
+
+
 println();
-
-//for løkke 
-for(int j=0;j<10;j++){
-  if (s.charAt(j)=='h'){
-    found=true;
-  }
-  println(s.charAt(j));
-}
-
+println("Opgave 3");
 
 //3) Lav henholdsvis en for-løkke og en while-løkken som skal finde alle e'er i sætningen: 
 //"Dette er en sætning som indeholder mange e'er. Men hvor mange er der?"
 //Løkken skal udskrive alle e'er og tilsidst udskrive hvor mange e'er som er fundet.
 
+println();
+println("Opgave 4");
+
 //4) Lav et program som udskriver bogstaverne fra position: 39,19,41,6,4,16,6,16,35,99,41,48,99,95 til skærmen. Brug sætningen "Løkken skal udskrive alle e'er og tilsidst udskrive hvor mange e'er som er fundet. Ja, så er det rigtigt :)"
+String l="Løkken skal udskrive alle e'er og tilsidst udskrive hvor mange e'er som er fundet. Ja, så er det rigtigt :)";
+String p1 = l.substring(38,39);
+String p2 = l.substring(18,19);
+String p3 = l.substring(40,41);
+String p4 = l.substring(5,6);
+String p5 = l.substring(3,4);
+String p6 = l.substring(15,16);
+String p7 = l.substring(5,6);
+String p8 = l.substring(15,16);
+String p9 = l.substring(34,35);
+String p10 = l.substring(98,99);
+String p11 = l.substring(40,41);
+String p12 = l.substring(47,48);
+String p13 = l.substring(98,99);
+String p14 = l.substring(94,95);
+
+println(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14);
+
+println();
+println("Opgave 5");
+
 //5) Lav et program som kan udskrive længden af overstående sætning.
+int læng = l.length();
+println(læng);
+
+println();
+println("Opgave 6");
+
 //6) Lav et program som klipper i vores streng. Den skal tage fra position 83 og til slut. Udskriv den nye streng.
+String sub1 = l.substring(82);
+println(sub1);
+
+println();
+println("Opgave 7");
+
 //7) Lav et program som klipper i vores streng. Den skal tage fra position 83 og til 85. Udskriv den nye streng.
-//8) Lav hele sætningen om til store bogstaver og udskrive den.   
+String sub2 = l.substring(82,85);
+println(sub2);
+
+println();
+println("Opgave 8");
+
+//8) Lav hele sætningen om til store bogstaver og udskrive den. 
+l = l.toUpperCase();
+println(l);
+
+println();
+println("Opgave 9");
+
 //9) Lav hele sætningen om til små bogstaver og udskrive den.
+l = l.toLowerCase();
+println(l);
+
+println();
+println("Opgave 10");
+
 //10) læs og forstå følgende program
+String str2 =  "Nej";
+if (str2.equals("ja"))
+  println ("Det gør den!");
+ else
+  println ("Det gør den ikke!");
+ 
+//a) hvad udskriver programmet?
+// prgrammet udskriver en lykker der siger at hhvis strengen som hedder nej der er det same som ja skal den udskrive "Det gør den!" eller skal programmet udskrive "det gør den ikke!"
+
+//b) hvordan kan du få programmet til at udskrive det modsatte af, hvad den gør nu?
+// Hvis man skal have programmet til at udskrive det modsatte skal man sætte en notgate ind det vil sige man sætter et "!" som man kan se nedenfor. 
+String str1 =  "Nej";
+if (!str1.equals("ja"))
+  println ("Det gør den!");
+ else
+  println ("Det gør den ikke!");
