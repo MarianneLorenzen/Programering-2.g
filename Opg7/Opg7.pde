@@ -95,9 +95,8 @@ println("opg 2.");
 //while løkke 
 //for løkke 
 for(int j=0;j<30;j++){
-  println(i);
-  if (i>10){
-    println(i);
+  if (j>10&&j<20){
+    println(j);
   }
 }
 
@@ -107,7 +106,16 @@ println("Opgave 3");
 //3) Lav henholdsvis en for-løkke og en while-løkken som skal finde alle e'er i sætningen: 
 //"Dette er en sætning som indeholder mange e'er. Men hvor mange er der?"
 //Løkken skal udskrive alle e'er og tilsidst udskrive hvor mange e'er som er fundet.
+String e = "Dette er en sætning med mange e'er";
+int antal = 0;
 
+for (int k = 0; k < e.length(); k++){
+  if (e.charAt(k) =='e'){
+    antal++;
+  }
+}
+println("e'er i sætningen: "+antal);
+ 
 println();
 println("Opgave 4");
 
