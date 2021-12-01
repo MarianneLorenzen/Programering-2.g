@@ -49,4 +49,4 @@ int [] sorter(int[] tal){
 }
 
 // laver todimmentionel array 
-tal[0][1]
+tal[0][1];
