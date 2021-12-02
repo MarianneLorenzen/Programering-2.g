@@ -10,23 +10,26 @@ slut
 
 */
 int [] colonne = new int[3];
-int [] bingoPlade = new int [9][3];
+int[][] bingoPlade = new int [9][3];
 
 void setup(){
-  colonne = findTreTal();
+  for(int i = 0; i<9;i++){
+  colonne = findTreTal(1, 11);
   printArray(colonne);
   println();
   colonne = sorter(colonne);
   printArray(colonne);
+  bingoPlade[i] = colonne;
+  }
 }
 
 void draw(){
 }
 
-int[] findTreTal (){
+int[] findTreTal (int x, int y){
   int[] tal = new int[3];
   for (int i=0; i<3; i++){
-    tal[i] = (int)random (1,11); 
+    tal[i] = (int)random ( x, y); 
   }
   return tal;
 }
@@ -49,4 +52,3 @@ int [] sorter(int[] tal){
 }
 
 // laver todimmentionel array 
-tal[0][1];
