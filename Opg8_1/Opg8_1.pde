@@ -113,7 +113,9 @@ void udskriv() {
   // ****text(string,x-værdi+10*i,y-værdi+10*j);
   for (int i =0; i<bingoPlade.length; i++) {
     for (int j =0; j<bingoPlade[i].length; j++) {
-      text(bingoPlade[i][j], 100+i*40, 100+j*40);
+      if (bingoPlade[i][j]>0) {
+        text(bingoPlade[i][j], 100+i*40, 100+j*40);
+      }
     }
   }
 }
