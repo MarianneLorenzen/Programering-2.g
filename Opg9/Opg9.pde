@@ -1,5 +1,6 @@
 String s="afbsdflee,gødre,eøsæekeenehzejkls.seekel";
 int antal = 0;
+int tæl = 0;
 int i = 0;
 int k = 0;
 boolean found = false;
@@ -29,7 +30,16 @@ println("e'er med while løkke: "+antal);
 
 // Opgave 2.3
 println();
-println("atalet af tegn: "+s.length());
+while (i<s.length()){
+  if (s.charAt(i) != ',' || s.charAt(i) != '.'){
+    tæl ++;
+  }
+  if (s.charAt(i) == ' '){
+    tæl --;
+  }
+  i++;
+}
+println("atalet af tegn: "+tæl);
 println();
 
 // Opgave 3.
