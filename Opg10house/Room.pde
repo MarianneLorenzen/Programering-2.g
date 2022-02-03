@@ -2,13 +2,13 @@ class Room {
   //klssens tilstand
 
   boolean light; //er lyset tændt eller slukket
-  String name; // rummets navn
+  String name; // rummets navn, dette er en konstant 
   float xPos, yPos; // x og y pos for rummets øverste venstre hjørne
   int height = 100; // konstant højden på rummet
   int width = 100; // konstant bredden på rummet
 
   //konstruktør
-  Room(String n, boolean onOff, float x, float y) {
+  Room(String n, boolean onOff, float x, float y) { // til klassen skal der være 4 parametre 
     name = n;
     light = onOff;
     xPos = x;
