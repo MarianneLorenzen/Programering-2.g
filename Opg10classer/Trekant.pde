@@ -1,23 +1,25 @@
 class Trekant {
   // klassens attributter/ tilstand
-  float x, y,x1,y1,x2,y2;                           // opgave 7. 
+  float x, y;                                        // opgave 7. 
+  float len;
 
   //konstroktøren
   Trekant() {
     this.x = random(600);                           // find to tilfældige værdier inden for canvas størrelsen
     this.y = random(400);
-    this.x1 = random(600);                          // find to tilføldige værdier inden for canvas størrelsen, opgave 7. 
-    this.y1 = random(400);
-    this.x2 = random(600);                          // find to tilfældige værdier inden for canvas størrelsen, opgave 7. 
-    this.y2= random(400);
+    this.len = random(100);
   }
 
   // klassens metoder
   
   // tegn firkant på canvas
   void drawTrekant() {
-    fill(random(255),random(255),random(255));      // opgave 6. 
-    triangle(x, y,x1,y1,x2,y2);                     // opgave 7. 
+    fill(random(256),random(256),random(256));      // opgave 6. 
+    pushMatrix();
+    translate (x,y);
+    rotate(frameCount);
+    triangle(0, 0,len,0,0,len);                     // opgave 7. 
+    popMatrix();
   }
   
 }
